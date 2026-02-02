@@ -6,9 +6,9 @@
 While learning about "Windows Pipes" exploitation, I decided to create several scripts that would not be blocked by EDR, for use in penetration testing. The scripts have been tested on Windows 10/11 operating systems, with Kaspersky Endpoint Security v.12 acting as the EDR. Currently, there are only 3 scripts, but I plan to expand "PlumberKit" in the future by adding new tools and updating existing ones.
 
 ## functional
-**PlumberKit-depose -** This tool checks "pipes" processes that can be hijacked. After selecting the target "pipes", the program creates an identical "pipes" faster than the target application and connects to it to abuse its capabilities.
-**PlubmerKit-keeker -** This tool inspects all "pipes" and outputs a brief summary of those that can be "eavesdropped" on.
-**PlumberKit-twins -** This tool displays all "pipes" and marks those that can be hijacked with the "DIGGED" tag.
+*  **PlumberKit-depose -** this tool checks "pipes" processes that can be hijacked. After selecting the target "pipes", the program creates an identical "pipes" faster than the target application and connects to it to abuse its capabilities.
+*  **PlubmerKit-keeker -** this tool inspects all "pipes" and outputs a brief summary of those that can be "eavesdropped" on.
+*  **PlumberKit-twins -** this tool displays all "pipes" and marks those that can be hijacked with the "DIGGED" tag.
 
 ## how to use
 ```powershell
@@ -16,7 +16,7 @@ While learning about "Windows Pipes" exploitation, I decided to create several s
 ```
 
 ## sample
-Depose
+*  **Depose**
 ```powershell
 PS C:\Users\UserOS\Desktop\PlumberKit> .\PlumberKit-depose.ps1
 Search vulnerable PIPE...
@@ -57,7 +57,7 @@ Ctrl+C to stop atack
 
 [1] Connect to WiFiNetworkManagerTask...
 ```
-Keeker
+*  **Keeker**
 ```powershell
 PS C:\Users\UserOS\Desktop\PlumberKit> .\PlumberKit-keeker.ps1
 
@@ -76,7 +76,7 @@ No access: 0
 Errors: 95
 ```
 
-Twins
+*  **Twins**
 ```powershell
 PS C:\Users\UserOS\Desktop\PlumberKit> .\PlumberKit-twins.ps1
     InitShutdown
